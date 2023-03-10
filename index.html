@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"> -->
+        <link rel="shortcut icon" href="Public/icon/zz.png">
+        <title> Agencia ZZ</title>
+
+    </head>
+    <body>  
+
+        <!-- Pagina del inicio de Sesion  -->
+
+        <section id="cajaPrincipal">
+            <section id="paginaLogin" class="mostrar">
+                <section class="cajaInicioSesion">
+                    <section>
+                        <form id="formulario">
+                            <h2>Empresa ZZ</h2>
+                            <section class="CajaUsuarioContraseña">
+                                <input type="text" id="usuario" required>
+                                <label>Usuario</label>
+                            </section>
+                            <section class="CajaUsuarioContraseña">
+                                <input type="password" id="contraseña" required>
+                                <label>Contraseña</label>
+                            </section>
+                            <input type="button" id="botonIniciarSesion"    value="Iniciar sesion">
+                            <p id="mensajeError" class="mensajeError ocultar">Contraseña O usuario Incorrectos</p>
+                        </form>         
+                    </section>
+                </section>
+            </section>
+        
+            <!-- Pagina Principal-->
+
+            <section id="paginaPrincipal" class="ocultar">
+                <section id="cajaOpciones" class="cajaOpciones"> 
+                    <section>
+                        <nav class="nav">
+                            <input type="button" id="botonesOpcionesCelular" value="Celular" style="color: white;">
+                            <input type="button" id="botonesOpcionesPortatil" value="Portatil" style="color: white;">
+                            <input type="button" id="botonesOpcionesCliente" value="Cliente" style="color: white;">
+                            <a class="boton">  
+                                <img src="Public/icon/IconLogOut2.png">
+                                <section class="cerrar">
+                                    <input type="button" id="botonCerrarSesion" value="Cerrar Sesion" style="color: white;">
+                                </section>
+                            </a>
+                        </nav>  
+                    </section>
+                <section class="cajita">
+                    <section id="cajaGeneralOpcionesCelular" class="ocultar">    
+                        <form id="formularioCelular" >
+                            <h2>Celular</h2>
+                            <section class="CajaUsuarioContraseña">
+                                <input type="text" id="nombre" required>
+                                <label>Nombre</label>
+                            </section>
+                            <section class="CajaUsuarioContraseña">
+                                <input type="text" id="referencia" required>
+                                <label>Referencia</label>
+                            </section>
+                            <section class="CajaUsuarioContraseña">
+                                <input type="text" id="codigo" required>
+                                <label>Codigo</label>
+                            </section>
+                            <section class="CajaUsuarioContraseña">
+                                <input type="text" id="valor" required>
+                                <label>Valor</label>
+                            </section>
+                            <section class="CajaUsuarioContraseña">
+                                <input type="text" id="cantidad" required>
+                                <label>Cantidad</label>
+                            </section>
+                            <section class="CajaUsuarioContraseña">
+                                <input type="file" id="seleccionarImagen" accept="image/*">
+                                <input type="button" id="botonEnviarCelular" style="text-align:center;" value="Guardar">
+                            </section>
+                        </form>
+                    </section>
+                    <section id="cajaGeneralOpcionesPortatil" class="ocultar">    
+                        <form id="formularioPortat" >
+                            <h2>Portatil</h2>
+                            <section class="CajaUsuarioContraseña">
+                                <input type="text" id="nombre" required>
+                                <label>Nombre</label>
+                            </section>
+                            <section class="CajaUsuarioContraseña">
+                                <input type="text" id="referencia" required>
+                                <label>Referencia</label>
+                            </section>
+                            <section class="CajaUsuarioContraseña">
+                                <input type="text" id="codigo" required>
+                                <label>Codigo</label>
+                            </section>
+                            <section class="CajaUsuarioContraseña">
+                                <input type="text" id="valor" required>
+                                <label>Valor</label>
+                            </section>
+                            <section class="CajaUsuarioContraseña">
+                                <input type="text" id="cantidad" required>
+                                <label>Cantidad</label>
+                            </section>
+                            <section class="CajaUsuarioContraseña">
+                                <input type="file" id="seleccionarImagen" accept="image/*">
+                                <input type="button" id="botonEnviarP" style="text-align:center;" value="Guardar">
+                            </section>
+                        </form>
+                    </section>  
+                    <section id="cajaGeneralOpcionesCliente" class="ocultar">    
+                        <form id="formularioCliente" >
+                            <h2>Cliente</h2>
+                            <section class="CajaUsuarioContraseña">
+                                <input type="text" id="nombre" required>
+                                <label>Nombre</label>
+                            </section>
+                            <section class="CajaUsuarioContraseña">
+                                <input type="text" id="referencia" required>
+                                <label>Documento</label>
+                            </section>
+                            <section class="CajaUsuarioContraseña">
+                                <input type="text" id="codigo" required>
+                                <label>Celular</label>
+                            </section>
+                            <section class="CajaUsuarioContraseña">
+                                <input type="text" id="valor" required>
+                                <label>Direccion</label>
+                            </section>
+                            <section class="CajaUsuarioContraseña">
+                                <input type="text" id="cantidad" required>
+                                <label>Correo</label>
+                            </section>
+                        </form>
+                    </section>
+                    <section id="card" class="ocultar">
+                        <section class="image">
+                          <img id="imagenCard" src="" class="imagenCard" alt="No hay imagen Disponible">
+                        </section>
+                        <p id="nombreP"></p>
+                        <p id="referenciaP"></p>
+                        <p id="codigoP"></p>
+                        <p id="valorP"></p>
+                        <p id="cantidadP"></p>
+                    </section>
+                </section>    
+                </section>
+                
+            </section>      
+        </section>
+        <script src="app.js "></script>
+    </body>
+</html>
